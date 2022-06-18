@@ -61,12 +61,18 @@ fluidRow(
                       solana Bengaluru Hacker House 22, Spring ChainLink hackathon 22,won Technophilia 
                       competition in SVIT Prakarsh Competiton, I Like Frontend Development and rightnow working with
               some of the startups and companies to have practical knowledge about a UI/UX designing, also fascinated by the cryptoworld
-              getting into NFTs and Web3 and DAO")
+              getting into NFTs and Web3 and DAO"),
+     tabPanel("Upload Fee reciepts",
+              fileInput("file", label = h3("File input"))
      ),
+  ),
   tabBox(height = "250px",
          tabPanel("QR Code(Connect Me)",
-                  tags$img(src="linkimage.png",height="200px",width="220px"))
-         )
+                  tags$img(src="linkimage.png",height="200px",width="220px")),
+      
+         tabPanel("Prediction",
+                  "Probability of getting placed in On Campus Placemnet:-79.174%")
+)
 ),
 
   
@@ -110,23 +116,19 @@ fluidRow(
 
     
   
-    tabItems(
-      # First tab content
-      tabItem(tabName = "dashboard",
+    
               fluidRow(
                 box(plotOutput("histishan", height = 250)),
               
                   box(plotOutput("scatteishan", height = 250))
                 
                 
-              )
-      ),
+              ),
       
-      # Second tab content
-      tabItem(tabName = "widgets",
-              h2("Widgets tab content")
-      )
-    ),
+      
+     
+
+    
 fluidRow(
   box(status = "success",title = "Vedant Shah(20C22050)", "Bio:-
         2nd year student, of B.tech(CSE AI) in SOCSET"),
@@ -162,6 +164,28 @@ fluidRow(
     
   )
 ),
+fluidRow(
+  tabBox(height = "250px",
+         tabPanel("Additional Achievements","Had Participated in GCP 2021, also took part in 
+                      solana Bengaluru Hacker House 22, Spring ChainLink hackathon 22,won Technophilia 
+                      competition in SVIT Prakarsh Competiton, I Like Frontend Development and rightnow working with
+              some of the startups and companies to have practical knowledge about a UI/UX designing, also fascinated by the cryptoworld
+              getting into NFTs and Web3 and DAO"),
+         tabPanel("Upload Fee reciepts",
+                  fileInput("file", label = h3("File input"))
+         ),
+  ),
+  tabBox(height = "250px",
+         tabPanel("QR Code(Connect Me)",
+                  tags$img(src="vedantshah1.png",height="200px",width="200px")),
+         
+         tabPanel("Prediction",
+                  "Probability of getting placed in On Campus Placemnet:-76.846%")
+  )
+
+
+),
+
 fluidRow(
   box(
     width = 4, background = "black",
@@ -205,6 +229,9 @@ fluidRow(
   
   
 ),
+
+
+
 fluidRow(
   box(status = "success",title = "Dhara Patel(20C22050)", "Bio:-
         2nd year student, of B.tech(CSE AI) in SOCSET"),
@@ -225,6 +252,7 @@ fluidRow(
     )
     
   ),
+
   tabBox(
     title = "Year 2",
     # The id lets us use input$tabset1 on the server to find the current tab
@@ -240,6 +268,28 @@ fluidRow(
     
   )
 ),
+fluidRow(
+  tabBox(height = "250px",
+         tabPanel("Additional Achievements","Had Participated in GCP 2021, also took part in 
+                      solana Bengaluru Hacker House 22, Spring ChainLink hackathon 22,won Technophilia 
+                      competition in SVIT Prakarsh Competiton, I Like Frontend Development and rightnow working with
+              some of the startups and companies to have practical knowledge about a UI/UX designing, also fascinated by the cryptoworld
+              getting into NFTs and Web3 and DAO"),
+         tabPanel("Upload Fee reciepts",
+                  fileInput("file", label = h3("File input"))
+         ),
+  ),
+  tabBox(height = "250px",
+         tabPanel("QR Code(Connect Me)",
+                  tags$img(src="dharapatel1.png",height="200px",width="220px")),
+         
+         tabPanel("Prediction",
+                  "Probability of getting placed in On Campus Placemnet:-96.14%")
+  )
+),
+
+
+
 fluidRow(
   box(
     width = 4, background = "black",
@@ -319,6 +369,27 @@ fluidRow(
   )
 ),
 fluidRow(
+  tabBox(height = "250px",
+         tabPanel("Additional Achievements","Had Participated in GCP 2021, also took part in 
+                      solana Bengaluru Hacker House 22, Spring ChainLink hackathon 22,won Technophilia 
+                      competition in SVIT Prakarsh Competiton, I Like Frontend Development and rightnow working with
+              some of the startups and companies to have practical knowledge about a UI/UX designing, also fascinated by the cryptoworld
+              getting into NFTs and Web3 and DAO"),
+         tabPanel("Upload Fee reciepts",
+                  fileInput("file", label = h3("File input"))
+         ),
+  ),
+  tabBox(height = "250px",
+         tabPanel("QR Code(Connect Me)",
+                  tags$img(src="linkimage.png",height="200px",width="220px")),
+         
+         tabPanel("Prediction",
+                  "Probability of getting placed in On Campus Placemnet:-67.531%")
+  )
+),
+
+
+fluidRow(
   box(
     width = 4, background = "black",
     "SEM 3"
@@ -360,15 +431,41 @@ fluidRow(
   box(plotOutput("scatteviraj", height = 250))
   
   
+),
+tabItems(
+  tabItem(tabName = "widgets",
+          h2("Overview Of RShiny Work Shop"),
+          br(),
+          h4("We Students of second year of B.tech CSE(AI) were introduced to this new tool of R Shiny Web App UI which helped us to
+             see how we can use this tool to Provide the great UI and Functionality to represent and use the data in the way which can 
+             help us to improve our life style"),
+          br(),
+          h4("We would like to thank our class co-ordinator and also the faculty Mrs. Archana Magare of our workshop who helped and pushed us to learn a one 
+             more new skill to add in the Skill set."),
+          br(),
+          br(),
+          h3("ITM Student Profile "),
+          br(),
+          h4("This project is mainly made for helping the students of ITM university and faculty to have the Student Data at 
+             one place and also in a unified manner, we have also used many and important features of Shiny web package like for structuring the 
+             data used fluid row and for showing the result we have used tabbox and tabpanekl, we have also added the QR code feature to make it easy
+             for any company to hire the Student, It will also provide the data (probability) of getting placed in the campus,We(Ishan, Dhara,Vedant and Viraj
+             students of 2'nd Year B.tech Student are hoping that it can help the fellow students of ITM,We also see this tool for other people to use 
+             and help others , That's why we have opensourced on the Github you can have all the files on the github.com/IshanPathak1 's repositry, use it by forking it,
+             Thank You,")
+  )
 )
 
 )
 
 
-
+title<-tags$a(href='https://www.google.com',
+              tags$img(src="images.png",height="50",width="100"),
+              'ITM Student Profile')
 ui<-dashboardPage( skin = "purple",
   header <- dashboardHeader( 
-    title = "ITM RESUME",
+    title = title,titleWidth = 600,
+    
     dropdownMenu(type = "notifications", badgeStatus = "warning",
                  notificationItem(icon = icon("warning"), status = "info",
                                   "Marks are updated"
@@ -451,6 +548,11 @@ server <- function(input, output) {
     x<-Viraj$Marks
     plot(x,xlab="Marks",ylab="Exam",main="Scatter plot of perfomance")
   })
+  output$value <- renderPrint({
+    str(input$file)
+  })
+  output$value <- renderPrint({ input$text })
+  output$value <- renderPrint({ input$text1 })
   
 }
 
